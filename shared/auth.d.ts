@@ -8,13 +8,14 @@ declare module '#auth-utils' {
   interface UserSession {
     user?: User
     secure?: SecureSessionData
-    loggedInAt: string
+    loggedInAt?: string
   }
 
   interface SecureSessionData {
-    apiToken: string
-    refreshToken: string
-    expiresAt: number
+    // apiToken: string
+    // refreshToken: string
+    // expiresAt: number
+    sid: string
   }
 }
 
